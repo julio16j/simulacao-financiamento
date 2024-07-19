@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Financiamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Simulação de Financiamento</h2>
+    <div class="form-group">
+        <label for="valorFinanciamento">Valor do Financiamento:</label>
+        <input type="number" id="valorFinanciamento" placeholder="Digite o valor">
+    </div>
+    <div class="form-group">
+        <label for="taxaJuros">Taxa de Juros:</label>
+        <input type="number" id="taxaJuros" step="0.0001" placeholder="Digite a taxa de juros">
+    </div>
+    <div class="form-group">
+        <label for="numeroParcelas">Número de Parcelas:</label>
+        <input type="number" id="numeroParcelas" placeholder="Digite o número de parcelas">
+    </div>
+    <div class="form-group">
+        <label for="amortizacaoMensal">Amortização Mensal:</label>
+        <input type="number" id="amortizacaoMensal" placeholder="Digite a amortização mensal">
+    </div>
+    <button class="btn" onclick="rodarSimulacao()">Simular</button>
+    <div class="result" id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
